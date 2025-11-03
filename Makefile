@@ -34,10 +34,10 @@ INCLUDE  = header
 
 # === Source and object files =================================================
 
-SRC = ft_printf.c \
-      ft_putbase.c \
-      ft_putchar.c \
-      ft_putstr.c \
+SRC = ft_printf.c   \
+      ft_putbase.c  \
+      ft_putchar.c  \
+      ft_putstr.c   \
       ft_putubase.c \
       ft_strlen.c
 

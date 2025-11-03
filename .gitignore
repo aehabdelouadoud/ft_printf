@@ -1,3 +1,6 @@
 compile_commands.json
 .clang-format
 obj/*.o
+.cache
+*.a
+*test*
