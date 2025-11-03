@@ -39,7 +39,8 @@ SRC = ft_printf.c   \
       ft_putchar.c  \
       ft_putstr.c   \
       ft_putubase.c \
-      ft_strlen.c
+      ft_strlen.c   \
+      ft_putptr.c
 
 SRCS = $(addprefix $(SRC_DIR)/, $(SRC))
 OBJS = $(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
