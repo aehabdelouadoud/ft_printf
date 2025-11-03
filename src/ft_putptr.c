@@ -6,13 +6,13 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 07:37:14 by abait-el          #+#    #+#             */
-/*   Updated: 2025/11/03 09:30:39 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/11/03 12:14:05 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-ssize_t	ft_putptr(void *ptr)
+ssize_t	ft_putptr(const void *ptr)
 {
 	if (!ptr)
 		return (ft_putstr("(nil)"));

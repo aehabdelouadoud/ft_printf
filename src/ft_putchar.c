@@ -6,13 +6,13 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 00:44:33 by abait-el          #+#    #+#             */
-/*   Updated: 2025/11/03 08:08:48 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/11/03 12:14:02 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-ssize_t	ft_putchar(char n)
+ssize_t	ft_putchar(const char n)
 {
 	return (write(STDOUT_FILENO, &n, 1));
 }

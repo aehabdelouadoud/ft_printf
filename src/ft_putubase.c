@@ -6,13 +6,13 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 01:51:11 by abait-el          #+#    #+#             */
-/*   Updated: 2025/11/03 11:05:56 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/11/03 12:14:12 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-ssize_t	ft_putubase(unsigned long long n, char *base)
+ssize_t	ft_putubase(const unsigned long long n, char *base)
 {
 	ssize_t	r;
 

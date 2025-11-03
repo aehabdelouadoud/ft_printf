@@ -6,13 +6,13 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 00:55:35 by abait-el          #+#    #+#             */
-/*   Updated: 2025/11/03 10:33:00 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/11/03 12:14:16 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-ssize_t	ft_strlen(char *s)
+ssize_t	ft_strlen(const char *s)
 {
 	size_t	l;
 

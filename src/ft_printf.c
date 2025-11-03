@@ -6,7 +6,7 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 00:35:11 by abait-el          #+#    #+#             */
-/*   Updated: 2025/11/03 11:18:23 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/11/03 12:22:31 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static int	ft_print_fmt(char fmt, va_list args)
 	return (s);
 }
 
-int	ft_printf(char *fmt, ...)
+int	ft_printf(const char *fmt, ...)
 {
 	va_list	args;
 	size_t	c;
@@ -51,14 +51,12 @@ int	ft_printf(char *fmt, ...)
 	while (*fmt)
 	{
 		if (*fmt == '%')
-		{
 			tmp = ft_print_fmt(*(fmt + 1), args);
-			if (tmp < 0)
-				return (-1);
-			c += tmp;
-		}
 		else
-			ft_putchar(*fmt);
+			tmp = ft_putchar(*fmt);
+		if (tmp < 0)
+			return (-1);
+		c += tmp;
 		fmt += 1 + (*fmt == '%');
 	}
 	va_end(args);
