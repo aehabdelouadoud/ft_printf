@@ -6,11 +6,34 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 00:35:11 by abait-el          #+#    #+#             */
-/*   Updated: 2025/11/03 04:45:19 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/11/03 05:27:01 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+static void	ft_print_fmt(char fmt, va_list args)
+{
+	if (fmt == 'd' || fmt == 'i')
+		ft_putbase((long long)va_arg(args, int), "0123456789");
+	else if (fmt == 'u')
+		ft_putubase((unsigned long long)va_arg(args, unsigned int), "0123456789");
+	else if (fmt == 's')
+		ft_putstr(va_arg(args, char *));
+	else if (fmt == 'c')
+		ft_putchar((char)va_arg(args, int));
+	else if (fmt == 'x')
+		ft_putubase((unsigned long long)va_arg(args, unsigned int), "0123456789abcdef");
+	else if (fmt == 'X')
+		ft_putubase((unsigned long long)va_arg(args, unsigned int), "0123456789ABCDEF");
+	else if (fmt == 'p')
+	{
+		ft_putstr("0x");
+		ft_putubase((unsigned long long)va_arg(args, void *), "0123456789abcdef");
+	}
+	else if (fmt == '%')
+		ft_putchar('%');
+}
 
 int	ft_printf(char *fmt, ...)
 {
@@ -24,23 +47,8 @@ int	ft_printf(char *fmt, ...)
 	{
 		if (*fmt == '%')
 		{
-			fmt++;
-			if (*fmt == 'd' || *fmt == 'i')
-				ft_putbase(va_arg(args, long long), "0123456789");
-			else if (*fmt == 'u')
-				ft_putubase(va_arg(args, long long), "0123456789");
-			else if (*fmt == 's')
-				ft_putstr(va_arg(args, char *));
-			else if (*fmt == 'c')
-				ft_putchar(va_arg(args, int));
-			else if (*fmt == 'x' || *fmt == 'p')
-				ft_putbase((long long)va_arg(args, void *), "0123456789abcef");
-			else if (*fmt == 'X')
-				ft_putbase((long long)va_arg(args, void *), "0123456789ABCEF");
-			else if (*fmt == '%')
-				ft_putchar('%');
-			else
-				fmt++;
+			ft_print_fmt(*(fmt + 1), args);
+			fmt += 2;
 		}
 		else
 			ft_putchar(*fmt);
