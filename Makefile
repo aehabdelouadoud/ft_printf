@@ -20,7 +20,7 @@
 
 # === Basic configuration =====================================================
 
-NAME     = libprintf.a
+NAME     = libftprintf.a
 CC       = cc
 CFLAGS   = -Wall -Wextra -Werror -I$(INCLUDE)
 AR       = ar rcs
