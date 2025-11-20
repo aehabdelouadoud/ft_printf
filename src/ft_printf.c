@@ -6,7 +6,7 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 00:35:11 by abait-el          #+#    #+#             */
-/*   Updated: 2025/11/05 22:39:00 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/11/19 14:48:25 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ static int	ft_print_fmt(char fmt, va_list ap)
 	else if (fmt == '%')
 		s = ft_putchar('%');
 	else
-		s = 0;
+		s = -1;
 	return (s);
 }
 
