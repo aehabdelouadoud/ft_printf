@@ -1,0 +1,104 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iheader",
+      "-Iheader",
+      "-c",
+      "-o",
+      "obj/ft_printf.o",
+      "src/ft_printf.c"
+    ],
+    "directory": "/home/eren/lab/dev/42/ft_printf",
+    "file": "/home/eren/lab/dev/42/ft_printf/src/ft_printf.c",
+    "output": "/home/eren/lab/dev/42/ft_printf/obj/ft_printf.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iheader",
+      "-Iheader",
+      "-c",
+      "-o",
+      "obj/ft_putbase.o",
+      "src/ft_putbase.c"
+    ],
+    "directory": "/home/eren/lab/dev/42/ft_printf",
+    "file": "/home/eren/lab/dev/42/ft_printf/src/ft_putbase.c",
+    "output": "/home/eren/lab/dev/42/ft_printf/obj/ft_putbase.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iheader",
+      "-Iheader",
+      "-c",
+      "-o",
+      "obj/ft_putchar.o",
+      "src/ft_putchar.c"
+    ],
+    "directory": "/home/eren/lab/dev/42/ft_printf",
+    "file": "/home/eren/lab/dev/42/ft_printf/src/ft_putchar.c",
+    "output": "/home/eren/lab/dev/42/ft_printf/obj/ft_putchar.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iheader",
+      "-Iheader",
+      "-c",
+      "-o",
+      "obj/ft_putstr.o",
+      "src/ft_putstr.c"
+    ],
+    "directory": "/home/eren/lab/dev/42/ft_printf",
+    "file": "/home/eren/lab/dev/42/ft_printf/src/ft_putstr.c",
+    "output": "/home/eren/lab/dev/42/ft_printf/obj/ft_putstr.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iheader",
+      "-Iheader",
+      "-c",
+      "-o",
+      "obj/ft_putubase.o",
+      "src/ft_putubase.c"
+    ],
+    "directory": "/home/eren/lab/dev/42/ft_printf",
+    "file": "/home/eren/lab/dev/42/ft_printf/src/ft_putubase.c",
+    "output": "/home/eren/lab/dev/42/ft_printf/obj/ft_putubase.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-Iheader",
+      "-Iheader",
+      "-c",
+      "-o",
+      "obj/ft_strlen.o",
+      "src/ft_strlen.c"
+    ],
+    "directory": "/home/eren/lab/dev/42/ft_printf",
+    "file": "/home/eren/lab/dev/42/ft_printf/src/ft_strlen.c",
+    "output": "/home/eren/lab/dev/42/ft_printf/obj/ft_strlen.o"
+  }
+]
