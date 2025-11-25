@@ -6,7 +6,7 @@
 /*   By: abait-el <abait-el@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/03 00:55:35 by abait-el          #+#    #+#             */
-/*   Updated: 2025/11/03 12:14:16 by abait-el         ###   ########.fr       */
+/*   Updated: 2025/11/25 04:18:07 by abait-el         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 ssize_t	ft_strlen(const char *s)
 {
-	size_t	l;
+	ssize_t	l;
 
 	if (!s)
-		return (-1);
+		return ((ssize_t)-1);
 	l = 0;
 	while (*(s + l))
 		l++;
