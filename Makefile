@@ -42,8 +42,8 @@ SRC = ft_printf.c   \
       ft_strlen.c   \
       ft_putptr.c
 
-SRCS = $(addprefix $(SRC_DIR)/, $(SRC))
-OBJS = $(addprefix $(OBJ_DIR)/, $(SRC:.c=.o))
+SRCS = $(SRC:%.c=$(SRC_DIR)/%.c)
+OBJS = $(SRC:%.c=$(OBJ_DIR)/%.o)
 
 # === Rules ===================================================================
 
